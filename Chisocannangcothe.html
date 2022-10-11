@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chir số cân nang cơ thể</title>
+</head>
+<body>
+<script>
+ //Chỉ số khối cơ thể (Body mass index-BMI) là một thước đo sức khoẻ dựa trên cân nặng và chiều cao. Nó được tính bằng cách lấy cân nặng đơn vị tính kilogam chia cho bình phương của chiều cao đơn vị tính mét. Công thức:
+ //BMI<18.5              Underweight
+ //18.5 =<BMI<25.0      Normal
+ //25=<BMI<30           Overweight
+ //30=<BMI              Obese
+
+ //bmi = weight / ( height ^ 2 )
+ inputweight = prompt("Enter the weight");
+ inputHeight = prompt("Enter the height");
+ let weight = parseInt(inputweight);
+ let height = parseInt(inputHeight);
+ let BMI = weight / ( height**2 )
+ if (BMI < 18)
+     document.write("Underweight");
+ else if (BMI < 25.0)
+     document.write("Normal");
+ else if (BMI < 30.0)
+     document.write("Overweight");
+ else
+     document.write("Obese");
+</script>
+</body>
+</html>
