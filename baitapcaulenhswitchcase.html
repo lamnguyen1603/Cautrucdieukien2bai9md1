@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>baitapcaulenhwitchcase</title>
+</head>
+<body>
+<!--Viết một ứng dụng cho phép tính được số ngày trong một tháng với giao diện như sau:-->
+<h2>Kiểm tra số ngày trong tháng</h2>
+<br>
+<input type = "text" name = "number"  id = "thang"></input>
+<button onclick = "Giatri()">Tinh số ngày</button>
+<br>
+<div id="result"></div>
+
+<script>
+  function Giatri(){
+
+    let month = document.getElementById("thang").value;
+
+    let result;
+    switch (month){
+      case'1':
+        result = 'tháng 1 có 31 ngày';
+        break;
+      case'2':
+        result = 'tháng 2 có 28 hoặc 29 ngày';
+        break;
+      case'3':
+        result = 'tháng 3 có 31 ngày';
+        break;
+      case'4':
+        result = 'tháng 4 có 30 ngày';
+        break;
+      case'5':
+        result = 'tháng 5 có 31 ngày';
+        break;
+      case'6':
+        result = 'tháng 6có 30 ngày';
+        break;
+      case'7':
+        result = 'tháng 7 có 31 ngày';
+        break;
+      case'8':
+        result = 'tháng 8 có 31 ngày';
+        break;
+      case'9':
+        result = 'tháng 9 có 30 ngày';
+        break;
+      case'10':
+        result = 'tháng 10 có 31 ngày';
+        break;
+      case'11':
+        result = 'tháng 11 có 30 ngày';
+        break;
+      case'12':
+        result = 'tháng 12 có 31 ngày';
+        break;
+
+    }
+    document.getElementById("result").innerHTML = result;
+  }
+</script>
+
+
+</body>
+</html>
