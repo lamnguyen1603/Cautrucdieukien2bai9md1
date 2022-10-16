@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập luyện tập cáu trúc điều kiện</title>
+</head>
+<body>
+<script>
+    // //   Bài 1: Chuyển từ độ C sang độ F.
+    // //
+    // // °C  x  9/5 + 32 = °F
+    // inputC = prompt("Nhập độ C");
+    // let C = parseInt(inputC);
+    // let F = 32+ 9/5 * C ;
+    // document.write("Độ F bằng:" +F);
+
+    // Bài 2: Chuyển từ mét sang feet:
+    //
+    //         ft =m * 3.2808
+    // inputm =prompt("Nhập độ dài mét");
+    // let m = parseInt(inputm)
+    // let ft = m * 3.2808
+    // document.write("Độ dài feet bằng:" +ft)
+
+    // Bài 3: Tính diện tích hình vuông khi biết cạnh a.
+
+    // inputcanh=prompt('Nhập độ dài cạnh a');
+    // let canh = parseInt(inputcanh);
+    // let S= canh ** 2 ;
+    // document.write("Diện tích hình vuông là :"+S)
+
+    // Bài 5: Tính diện tích tam giác vuông khi biết 02 cạnh kề a, b.
+    // inputcacha = prompt('nhập cạch kề thứ nhất');
+    // inputcachb = prompt('nhập cạch kề thứ hai');
+    // let cacha = parseInt(inputcacha);
+    // let cachb = parseInt(inputcachb);
+    // let S = (cacha * cachb)/2 ;
+    // document.write('diện tích tam giác vuông là :'+S)
+
+    //Bài 6: Giải phương trình bậc 1.
+    //ax -b =0
+    // inputa = prompt('nhập giá trị a');
+    // inputb = prompt('nhập giá trị b');
+    // let a = parseInt(inputa);
+    // let b = parseInt(inputb);
+    // let x = b/a ;
+    // document.write( 'x=' +x)
+
+    // Bài 7 :Giải phương trình bậc 2.
+    //cho phương trình bậc 2 có dạng a*(x**2)+(b*x)+c = 0 với (a!=0)
+
+    // inputa = prompt('nhập giá trị của a với a khác 0');
+    // inputb = prompt('nhập giá trị của b');
+    // inputc = prompt('nhập giá trị của c');
+    // let a = parseInt(inputa);
+    // let b = parseInt(inputb);
+    // let c = parseInt(inputc);
+    // let deta = (b ** 2) - (4 * a * c)
+    //
+    // if (deta > 0) {
+    //     document.write('phương trình có 2 nghiệm là :' + 'x1 = ' + (((-b) - (deta / 2)) / (2 * a)) + 'x2=' + (((-b) + (deta / 2)) / (2 * a)))
+    // } else {
+    //     document.write('phương trình vô nghiệm')
+    // }
+    // if(deta =0){
+    //     document.write('phương trình có nghiệm kép x1 =x2 ='+((-b)/(2*a)))
+    // }
+    // Bài 8: Kiểm tra xem một số nhập vào có phải là tuổi của một người không. Một số nguyên là tuổi của một người khi nhỏ 120 và lơn hơn 0.
+
+    // inputage = prompt('Nhập số nguyên tuổi');
+    // let age = parseInt(inputage);
+    // if(age<120){
+    //     if(age>0){
+    //         alert('Đây là tuổi của một người')
+    //     }
+    // }else{
+    //     alert('Đây không phải là tuổi của một người')
+    // }
+
+
+    // Bài 10: Viết chương trình tính giá điện.
+
+    // Bậc 1 (0 đến 50kWh): 1.678 đồng/kWh
+    // Bậc 2 (51 đến 100kWh): 1.734 đồng/kWh
+    // Bậc 3 (101 đến 200 kWh): 2.014 đồng/kWh
+    // Bậc 4 (201 đến 300 kWh): 2.536 đồng/kWh
+    // Bậc 5 (301 đến 400 kWh): 2.834 đồng/kWh
+    // Bậc 6 (401 kWh trở lên): 2.927 đồng/kWh
+
+    // Tiền điện bậc 1 (50 số) = 50 x 1.678 = 83.900 đồng
+    // Tiền điện bậc 2 (50 số) = 50 x 1.734 = 86.700 đồng
+    // Tiền điện bậc 3 (100 số) = 100 x 2.014 = 201.400 đồng
+
+
+    // nhập số điện
+    // IF số điện <=50 thì x =50 *1678
+    // IF số điện > 50 và <= 100 thì x = 50*1678 +(so dien-50)*1734
+    // IF số điện >101 va <=200 thì x= 50*1678 +50*1734+(sô dien -100)
+
+
+    // let n = prompt('nhập số điện');
+    //
+    // if(n<=50){
+    //     document.write('sốtiền phải đóng='+50*1678)
+    // }else if(n>50 && n<=100){
+    //     document.write('sốtiền phải đóng='+50*1678+(n-50)*1734)
+    // }else if (n>101 && n<=200){
+    //     document.write('sốtiền phải đóng='+50*1678+50*1734+(n-100)*2014)
+    // }else if (n>201 && n<=300){
+    //     document.write('sốtiền phải đóng='+50*1678+50*1734+100*2014+(n-100)*2536)
+    // }else if (n>301 && n<=400){
+    //     document.write('sốtiền phải đóng='+50*1678+50*1734+100*2014+100*2536+(n-100)*2834)
+    // }else if (n>400){
+    //     document.write('sốtiền phải đóng='+50*1678+50*1734+100*2014+100*2536+100*2834+(n-100)*2927)
+    // }
+
+
+    // Bài 9: Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác. Điều kiện để a,b,c là cạnh của một tam giác là:
+    //
+    // a,b,c > 0
+    // a + b > c
+    // b + c > a
+    //
+    // let a = +prompt('nhập cạnh a')
+    // let b = +prompt('nhập cạnh b')
+    // let c = +prompt('nhập cạnh c')
+    // if (a > 0 && b > 0 && c > 0) {
+    // } else if (a + b > c && b + c > a && a + c > b) {
+    //     document.write('đây là 3 cạnh của một tam giác')
+    // } else{
+    //     document.write('đây không phải là 3 cạnh của một tam giác')
+    // }
+
+    //Bài 12: Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lãi con) khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng.
+   // lãi suất hàng thang là 15 %
+    // T = M*(1+r*n)
+    //
+    // Trong đó:
+    //     T = Tổng tiền phải trả  (a*15)/100
+    //
+    // M = Số tiền gốc
+    //
+    // r = lãi suất hàng tháng
+    //
+    // n = số tháng vay
+
+    // let a =+prompt('nhập số tiền')
+    // let b =+prompt('nhập số tháng')
+    // if(a>0&&b>0){
+    //     document.write('số tiền phải trả='+a*(1+0.15*b))
+    // }else {
+    //     document.write('số tiền với số tháng không thể nhỏ hơn không')
+    // }
+
+
+</script>
+
+</body>
+</html>

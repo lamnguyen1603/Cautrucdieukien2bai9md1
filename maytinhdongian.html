@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy Tính Đơn Giản</title>
+</head>
+<body>
+<input type="text" name="number" placeholder="0" id="result">
+<br>
+<br>
+<table>
+    <tr>
+        <td><input type="button" value="1" id="1" onclick="xulygiatri('1')"> </td>
+        <td><input type="button" value="2" id="2" onclick="xulygiatri('2')"></td>
+        <td><input type="button" value="3" id="3" onclick="xulygiatri('3')"></td>
+        <td><input type="button" value="+" id="+" onclick="xulygiatri('+')"> </td>
+    </tr>
+    <tr>
+        <td><input type="button" value="4" id="4" onclick="xulygiatri('4')"></td>
+        <td><input type="button" value="5" id="5" onclick="xulygiatri('5')"></td>
+        <td><input type="button" value="6" id="6" onclick="xulygiatri('6')"></td>
+        <td><input type="button" value="-" id="-" onclick="xulygiatri('-')"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="7"  id="7" onclick="xulygiatri('7')"></td>
+        <td><input type="button" value="8" id="8" onclick="xulygiatri('8')"></td>
+        <td><input type="button" value="9" id="9" onclick="xulygiatri('9')"></td>
+        <td><input type="button" value="*" id="*" onclick="xulygiatri('*')"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="AC" id="AC" onclick="xoa('AC')"></td>
+        <td><input type="button" value="0" id="0" onclick="xulygiatri('0')"></td>
+        <td><input type="button" value="=" id="=" onclick="xulyketqua('=')"></td>
+        <td><input type="button" value="/" id="/" onclick="xulygiatri('/')"></td>
+    </tr>
+</table>
+<script>
+    let result ='';
+    function xulygiatri(input) {
+        let a = document.getElementById(input).value;
+        result += a;
+        document.getElementById('result').value = result;
+    }
+    function xulyketqua() {
+        let ketqua = eval(result);
+        document.getElementById('result').value = ketqua;
+        result = ketqua;
+
+    }
+    function xoa() {
+        document.getElementById('result').value = '0';
+        result = '';
+    }
+</script>
+</body>
+</html>
